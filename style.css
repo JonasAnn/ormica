@@ -18,16 +18,20 @@ body{
 }
 
 /* header styling */
+.header{
+    position: relative;
+}
 
+/* navbar styling */
 .navbar{
     height: 10vh;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 .navbar__list{
-    display: flex;
+    /* display: flex;
     justify-content: space-evenly;
-    width: 25%;
+    width: 25%; */
     margin-left: 4rem;
     list-style: none;
     padding: 2rem 0 0;
@@ -41,6 +45,7 @@ body{
 .navbar__item--logo{
     width: 40%;
     height: auto;
+    display: none;
 }
 .navbar__logo{
     max-width: 100%;
@@ -48,3 +53,34 @@ body{
     object-fit: cover;
 }
 
+/* vertical nav styling */
+.vertical__nav{
+    position: absolute;
+    right: 2rem;
+    top: 5rem;
+    z-index: 2;
+}
+.vertical__nav--triangle{
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    border-radius: 2px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.vertical__nav--box{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.vertical__nav--box:not(:last-child){
+    margin-bottom: 1.5rem;
+}
+.vertical__nav--text{
+    /* display: none; */
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: .5rem;
+}
+
+/* center logo */
