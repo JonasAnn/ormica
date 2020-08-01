@@ -13,7 +13,7 @@ html {
 }
 
 body{
-    background-color: aqua;
+    background-color: orange;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -21,17 +21,26 @@ body{
 .header{
     position: relative;
 }
+.header__logo--box{
+    margin: 20rem auto 0;
+    width: 40%;
+}
+.header__logo{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+}
 
 /* navbar styling */
 .navbar{
     height: 10vh;
     width: 100%;
-    /* background-color: red; */
 }
 .navbar__list{
     /* display: flex;
     justify-content: space-evenly;
-    width: 25%; */
+    width: 22%;
+    background-color: greenyellow; */
     margin-left: 4rem;
     list-style: none;
     padding: 2rem 0 0;
@@ -43,7 +52,7 @@ body{
     font-weight: 600;
 }
 .navbar__item--logo{
-    width: 40%;
+    width: 33%;
     height: auto;
     display: none;
 }
@@ -56,16 +65,18 @@ body{
 /* vertical nav styling */
 .vertical__nav{
     position: absolute;
-    right: 2rem;
+    right: 4rem;
     top: 5rem;
     z-index: 2;
 }
 .vertical__nav--triangle{
     height: 1rem;
     width: 1rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.65);
     border-radius: 2px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    cursor: pointer;
+    transition: all .2s ease;
 }
 .vertical__nav--box{
     display: flex;
@@ -76,11 +87,19 @@ body{
     margin-bottom: 1.5rem;
 }
 .vertical__nav--text{
-    /* display: none; */
+    opacity: 0;
     color: white;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-right: .5rem;
+    
+    transition: opacity .2s ease;
 }
 
-/* center logo */
+/* animation for vertical nav */
+.vertical__nav--triangle:hover {
+    background-color: red;
+}
+.vertical__nav--triangle:hover ~ .vertical__nav--text{
+    opacity: 1;
+}
