@@ -20,6 +20,7 @@ body{
 /* header styling */
 .header{
     position: relative;
+    height: 100vh;
 }
 .header__logo--box{
     margin: 20rem auto 0;
@@ -64,7 +65,7 @@ body{
 
 /* vertical nav styling */
 .vertical__nav{
-    position: absolute;
+    position: fixed;
     right: 4rem;
     top: 5rem;
     z-index: 2;
@@ -75,6 +76,7 @@ body{
     background-color: rgba(255, 255, 255, 0.65);
     border-radius: 2px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     cursor: pointer;
     transition: all .2s ease;
 }
@@ -92,7 +94,7 @@ body{
     font-size: 1rem;
     font-weight: 600;
     margin-right: .5rem;
-    
+    text-transform: capitalize;
     transition: opacity .2s ease;
 }
 
@@ -102,4 +104,87 @@ body{
 }
 .vertical__nav--triangle:hover ~ .vertical__nav--text{
     opacity: 1;
+}
+
+/* section sell css */
+.section__sell{
+    height: 100vh;
+    width: 100%;
+    background-color: tomato;
+}
+
+.section__sell--header{
+    text-align: center;
+    padding: 10rem 0 4rem;
+    color: black;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.section__sell--cta{
+    width: 45%;
+    margin: 0 auto 0;
+    background-color: rgba(0, 0, 0, 0.644);
+    padding: 4rem 0;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.sell__cta--header{
+    font-size: 2.7rem;
+    font-weight: 500;
+    padding: 0 0 1.5rem;
+}
+.sell__cta--paragraph{
+    font-size: 1.8rem;
+    color: #ffffff8f;
+    padding: 0 0 2.2rem;
+}
+
+.section__sell--btn{
+    width: 50%;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    padding: 1.5rem 0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+}
+
+/* animation for button */
+
+.section__sell--btn:hover{
+    transform: translateY(-.5rem);
+    box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.75);
+}
+
+.section__sell--btn:active{
+    transform: translateY(0);
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+    outline: none;
+}
+
+/* section buy style */
+.section__buy{
+    height: 100vh;
+    width: 100%;
+    background-color: #006A71;
+}
+
+.section__buy--header{
+    text-align: center;
+    padding: 10rem 0 4rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.section__buy--paragraph{
+    font-size: 1.8rem;
+    color: #ffffff8f;
+    padding: 0 0 2.2rem;
+    text-align: center;
 }
