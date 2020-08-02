@@ -195,4 +195,31 @@ body{
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
+    margin: auto;
+}
+
+.house__options{
+    width: 30%;
+}
+.house__option--image{
+    width: 100%;
+    height: auto;
+}
+
+.house--image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.house__option--text{
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+.house__option--link{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
