@@ -295,13 +295,33 @@ body{
     font-size: 3rem;
 }
 
-.section__blog--1{
+.section__blog--1,
+.section__blog--2{
     display: flex;
-    margin: 0 auto;
-    width: 60%;
+    width: 70%;
     justify-content: space-between;
+}
+.section__blog--2{
+    margin: 0 auto;
+}
+.section__blog--1{
+    margin: 0 auto 1rem;
 }
 
 .blog__post{
-    width: 30%;
+    width: 32%;
+    cursor: pointer;
+    background-image: url("./images/4121213.jpg");
+    background-size: cover;
+    transition: all .2 ease-in-out;
+}
+
+.blog__post:hover{
+    background-image: linear-gradient(to right, rgba(75, 43, 192, 0.603) 0%, rgba(75, 43, 192, 0.603) 15%, rgba(0, 0 , 0, 0.6) 15%),
+    url("./images/4121213.jpg");
+}
+
+.blog__post--image{
+    width: 100%;
+    object-fit: cover;
 }
