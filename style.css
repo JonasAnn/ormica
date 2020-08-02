@@ -296,5 +296,12 @@ body{
 }
 
 .section__blog--1{
-    
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.blog__post{
+    width: 30%;
 }
