@@ -301,7 +301,7 @@ body{
 }
 
 .section__us--reasons{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     height: auto;
     
@@ -317,7 +317,7 @@ body{
 }
 
 .reason__options{
-    width: 30%;
+    width: 23%;
     z-index: 3;
 }
 .reason__option--image{
@@ -393,7 +393,13 @@ body{
     font-size: 2rem;
     display: block;
     text-align: center;
-    margin-top: 1.5rem ;
+    margin: 1.5rem 0 ;
+}
+
+.blog__details{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
 }
 
 
@@ -411,32 +417,51 @@ body{
 
 .about__us,
 .blog__news,
-.contact__us{
-    width: 25%;
+.contact__us,
+.sections{
     font-size: 1.8rem;
+}
+.about__us{
+    width: 30%;
+}
+.blog__news{
+    width: 20%;
+}
+.contact__us{
+    width: 15%;
+}
+.sections{
+    width: 10%;
 }
 
 .about__us--header,
 .blog__news--header,
-.contact__us--header{
+.contact__us--header,
+.sections__header{
     font-size: 2.3rem;
     font-weight: 600;
     padding: 0 0 1.5rem;
 }
-.blog__news--list{
+.blog__news--list,
+.sections__list{
     list-style: none;
 }
 
-.blog__news--items:not(:last-child){
+.blog__news--items:not(:last-child),
+.sections__items:not(:last-child){
     padding: 0 0 .5rem;
 }
 
-.blog__news--links{
+
+.blog__news--links,
+.sections__links{
     text-decoration: none;
 }
 
 .blog__news--links:visited,
-.blog__news--links:active{
+.blog__news--links:active,
+.sections__links:visited,
+.sections__links:active{
     color: blue;
 }
 
