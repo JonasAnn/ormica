@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ormica</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -51,7 +52,7 @@
 
         <!-- header background image -->
         <div class="header__background">
-            <img src="./images/sketch.png" alt="backgroun image" class="header__background--image">
+            <img src="./images/sydney-opera-house.png" alt="backgroun image" class="header__background--image">
         </div>
 
         <!-- center logo  -->
@@ -59,15 +60,21 @@
             <img src="./images/logo.png" alt="logo" class="header__logo">
         </div>
 
+        <!-- arrow -->
+        <p class="arrow">
+            <a href="#sell" class="arrow__link">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+        </p>
     </header>
 
     <!-- Sell section -->
-    <section class="section__sell">
+    <section class="section__sell" id="sell">
         <h2 class="section__sell--header"> SELL YOUR HOME</h2>
         <div class="section__sell--cta">
             <h4 class="sell__cta--header">Selling Your Home Just Got Easier</h4>
             <p class="sell__cta--paragraph">Simplify selling with us</p>
-            <button class="section__sell--btn">Sell Now</button>
+            <a href="#" class="section__sell--btn">Sell Now</a>
         </div>
         <!-- <form action="" class="section__sell--form">
 
@@ -78,10 +85,17 @@
             <img src="./images/loan.png" alt="background image" class="sell__background--image">
         </div>
 
+                <!-- arrow -->
+                <p class="arrow">
+                    <a href="#buy" class="arrow__link">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                </p>
+
     </section>
 
     <!-- Buy section -->
-    <section class="section__buy">
+    <section class="section__buy" id="buy">
         <h2 class="section__buy--header">LET'S BUY YOUR HOME</h2>
         <p class="section__buy--paragraph">The Best Price You Could Get Out There</p>
         <!-- Buy section Resources -->
@@ -130,12 +144,14 @@
         <div class="buy__background">
             <img src="./images/rent.png" alt="background image" class="buy__background--image">
         </div>
+
     </section>
 
     <!-- why us section -->
     <section class="section__us">
         <h2 class="section__us--header">WHY US?</h2>
         <div class="section__us--reasons">
+
             <!-- Box One -->
             <div class="us--reason--one">
                 <!-- Reason one -->
@@ -177,8 +193,12 @@
                     <a href="#" class="reason__option--link">Read More..</a>
                 </div>
 
-                 <!-- Reason four -->
-                 <div class="reason__options">
+            </div>    
+
+        <!-- Box two -->
+            <div class="us--reason--two">
+                <!-- Reason four -->
+                <div class="reason__options">
                     <div class="reason__option--image">
                         <img src="./images/reasons.jpg" alt="reason" class="reason--image">
                     </div>
@@ -189,23 +209,6 @@
                     </p>
                     <a href="#" class="reason__option--link">Read More..</a>
                 </div>
-
-            </div>    
-
-        <!-- Box two -->
-            <div class="us--reason--two">
-                <!-- Reason four -->
-                <!-- <div class="reason__options">
-                    <div class="reason__option--image">
-                        <img src="./images/reasons.jpg" alt="reason" class="reason--image">
-                    </div>
-                    <p class="reason__option--text">
-                        Lorem ipsum dolor sit, amet consectetur 
-                        adipisicing elit. Natus 
-                        
-                    </p>
-                    <a href="#" class="reason__option--link">Read More..</a>
-                </div> -->
 
                 <!-- Reason five -->
                 <div class="reason__options">
@@ -240,10 +243,17 @@
             <img src="./images/pets.png" alt="background image" class="us__background--image">
         </div>
 
+         <!-- arrow -->
+         <p class="arrow">
+            <a href="#blog" class="arrow__link">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+        </p>
+
     </section>
 
     <!-- section for blog -->
-    <section class="section__blog">
+    <section class="section__blog" id="blog">
         <h2 class="section__blog--header">
             OUR BLOG
         </h2>
@@ -312,6 +322,10 @@
                 </p>
                 </div>
         </div>
+        </div>
+        <!-- blog background image -->
+        <div class="blog__background">
+            <img src="./images/sketch.png" alt="backgroun image" class="blog__background--image">
         </div>
 
     </section>
@@ -396,6 +410,7 @@
             <p class="contact__us--phone">
                 +00000050
             </p>
+            <img src="./images/logo.png" alt="logo" class="contact__logo">
         </div>
 
     </footer>

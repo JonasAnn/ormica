@@ -16,7 +16,17 @@ body{
     background-color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
-
+.arrow{
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+.arrow__link{
+    text-decoration: none;
+    font-size: 6rem;
+    color: gray;
+}
 /* header styling */
 .header{
     background-color: lavender;
@@ -146,14 +156,14 @@ body{
 .section__sell--header{
     text-align: center;
     padding: 8rem 0 4rem;
-    color: black;
+    color: #ffffff;
     font-weight: 700;
     font-size: 3rem;
 }
 
 .section__sell--cta{
     width: 45%;
-    margin: 0 auto 0;
+    margin: 2rem auto 0;
     background-color: rgba(0, 0, 0, 0.644);
     padding: 4rem 0;
     text-align: center;
@@ -172,7 +182,10 @@ body{
 }
 
 .section__sell--btn{
+    display: block;
+    text-decoration: none;
     width: 50%;
+    margin: 0 auto;
     background-color: green;
     border-radius: 5px;
     border: none;
@@ -194,12 +207,11 @@ body{
 .section__sell--btn:active{
     transform: translateY(0);
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
-    outline: none;
 }
 
 /* section buy style */
 .section__buy{
-    height: 100vh;
+    height: 87vh;
     width: 100%;
     background-color: #006A71;
     position: relative;
@@ -279,7 +291,7 @@ body{
     position: relative;
 }
 .us__background{
-    width: 22%;
+    width: 25%;
     position: absolute;
     left: 5rem;
     top: 1rem;
@@ -294,7 +306,7 @@ body{
 
 .section__us--header{
     text-align: center;
-    padding: 8rem 0 4rem;
+    padding: 8rem 0 5rem;
     color: #ffffff;
     font-weight: 700;
     font-size: 3rem;
@@ -302,7 +314,7 @@ body{
 
 .section__us--reasons{
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 6rem;
     height: auto;
     
 }
@@ -317,7 +329,7 @@ body{
 }
 
 .reason__options{
-    width: 23%;
+    width: 30%;
     z-index: 3;
 }
 .reason__option--image{
@@ -349,6 +361,21 @@ body{
     width: 100%;
     background-color: #342B38;
     padding-bottom: 4rem;
+    position: relative;
+}
+
+.blog__background{
+    width: 25%;
+    position: absolute;
+    right: 10rem;
+    bottom: 25rem;
+    z-index: 0;
+}
+
+.blog__background--image{
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.1;
 }
 
 .section__blog--header{
@@ -375,7 +402,8 @@ body{
 .blog__post{
     width: 32.5%;
     cursor: pointer;
-    transition: all .2 ease-in-out;
+    z-index: 3;
+    /* transition: all .2 ease-in-out; */
 }
 
 .blog__post:hover{
@@ -516,4 +544,11 @@ body{
 
 .contact__us--email{
     padding:  0 0 1rem;
+}
+
+.contact__logo{
+    width: 80%;
+    height: auto;
+    display: block;
+    padding: 3rem 0 0;
 }
