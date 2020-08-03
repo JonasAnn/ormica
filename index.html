@@ -74,11 +74,8 @@
         <div class="section__sell--cta">
             <h4 class="sell__cta--header">Selling Your Home Just Got Easier</h4>
             <p class="sell__cta--paragraph">Simplify selling with us</p>
-            <a href="#" class="section__sell--btn">Sell Now</a>
+            <a href="#popup" class="section__sell--btn">Sell Now</a>
         </div>
-        <!-- <form action="" class="section__sell--form">
-
-        </form> -->
 
          <!-- section sell background image -->
          <div class="sell__background">
@@ -260,33 +257,52 @@
         <!-- First Three Blog Post -->
         <div class="section__blog--1">
 
-            <div class=" blog__post blog__post--one">
+            <a href="#" class=" blog__post blog__post--one">
                 <img src="./images/4121213.jpg" alt="blog post image" class="blog__post--image">
-            </div>
+                <div class="blog__post--cover">
+                    <p class="post__cover--text">Making Your Home Better For Tomorrow</p>
+                </div>
+            </a>
 
-            <div class=" blog__post blog__post--two">
+            <a href="#" class=" blog__post blog__post--two">
                 <img src="./images/4121213.jpg" alt="blog post image" class="blog__post--image">
-            </div>
+                <div class="blog__post--cover">
+                    <p class="post__cover--text">Making Your Home Better For Tomorrow</p>
+                </div>
+            </a>
 
-            <div class=" blog__post blog__post--three">
+            <a href="#" class=" blog__post blog__post--three">
                 <img src="./images/4121213.jpg" alt="blog post image" class="blog__post--image">
-            </div>
+                <div class="blog__post--cover">
+                    <p class="post__cover--text">Making Your Home Better For Tomorrow</p>
+                </div>
+            </a>
 
         </div>
 
         <div class="section__blog--2">
 
-            <div class=" blog__post blog__post--three">
+            <a href="#" class=" blog__post blog__post--four">
                 <img src="./images/4121213.jpg" alt="blog post image" class="blog__post--image">
-            </div>
+                <div class="blog__post--cover">
+                    <p class="post__cover--text">Making Your Home Better For Tomorrow</p>
+                </div>
+            </a>
 
-            <div class=" blog__post blog__post--four">
+            <a href="#" class=" blog__post blog__post--five">
                 <img src="./images/4121213.jpg" alt="blog post image" class="blog__post--image">
-            </div>
+                <div class="blog__post--cover">
+                    <p class="post__cover--text">Making Your Home Better For Tomorrow</p>
+                </div>
+            </a>
 
-            <div class=" blog__post blog__post--five">
+            <a href="#" class=" blog__post blog__post--six">
                 <img src="./images/4121213.jpg" alt="blog post image" class="blog__post--image">
-            </div>
+                <div class="blog__post--cover">
+                    <p class="post__cover--text">Making Your Home Better For Tomorrow</p>
+                </div>
+                </a>
+            </a>
 
         </div>
 
@@ -414,5 +430,29 @@
         </div>
 
     </footer>
+
+    <!-- popup  -->
+    <div class="popup" id="popup">
+        <div class="popup__content">
+
+        <form action="" class="popup__form">
+            <h4 class="popup__form--header">We're ready to Listen!</h4>
+            <p class="popup__form--paragraph">Fill out the form below and we will contact you shortly!</p>
+            <hr>
+            <label for="email"></label>
+            <input type="email" class="popup__email popup__input" placeholder="Email" id="email" required>
+            <label for="name"></label>
+            <input type="text" class="popup__name popup__input" placeholder="Name" id="name" required>
+
+            <a href="#" class="popup__form--forward">Get Started</a>
+
+                <a href="#sell" class="popup__form--backward">
+                    <i class="fa fa-times-circle" aria-hidden="true"></i>
+                </a>
+           
+        </form>
+
+        </div>
+    </div>
 </body>
 </html>
