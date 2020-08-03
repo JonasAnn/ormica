@@ -276,12 +276,13 @@ body{
     width: 100%;
     background-color: #79D70F;
     padding: 0 0 6rem;
+    position: relative;
 }
 .us__background{
-    width: 25%;
+    width: 22%;
     position: absolute;
-    left: 10rem;
-    top: 5rem;
+    left: 5rem;
+    top: 1rem;
     z-index: 0;
 }
 
@@ -303,6 +304,7 @@ body{
     width: 60%;
     margin: 0 auto;
     height: auto;
+    
 }
 .us--reason--one,
 .us--reason--two{
@@ -316,6 +318,7 @@ body{
 
 .reason__options{
     width: 30%;
+    z-index: 3;
 }
 .reason__option--image{
     width: 100%;
