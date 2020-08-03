@@ -13,18 +13,34 @@ html {
 }
 
 body{
-    background-color: orange;
+    background-color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
 
 /* header styling */
 .header{
+    background-color: lavender;
     position: relative;
     height: 100vh;
 }
+
+.header__background{
+    width: 25%;
+    position: absolute;
+    right: 20rem;
+    top: 15rem;
+}
+
+.header__background--image{
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.1;
+}
+
 .header__logo--box{
     margin: 20rem auto 0;
     width: 40%;
+    z-index: 3;
 }
 .header__logo{
         width: 100%;
@@ -100,7 +116,7 @@ body{
 
 /* animation for vertical nav */
 .vertical__nav--triangle:hover {
-    background-color: red;
+    background-color: #ffffff;
 }
 .vertical__nav--triangle:hover ~ .vertical__nav--text{
     opacity: 1;
