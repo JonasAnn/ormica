@@ -309,10 +309,8 @@ body{
 }
 
 .blog__post{
-    width: 32%;
+    width: 32.5%;
     cursor: pointer;
-    background-image: url("./images/4121213.jpg");
-    background-size: cover;
     transition: all .2 ease-in-out;
 }
 
@@ -324,4 +322,13 @@ body{
 .blog__post--image{
     width: 100%;
     object-fit: cover;
+}
+
+.blog__btn{
+    /* text-decoration: none; */
+    color: #ffffff;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem ;
 }
