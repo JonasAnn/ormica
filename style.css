@@ -395,3 +395,51 @@ body{
     text-align: center;
     margin-top: 1.5rem ;
 }
+
+
+
+
+/* css for footer */
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.about__us,
+.blog__news,
+.contact__us{
+    width: 25%;
+    font-size: 1.8rem;
+}
+
+.about__us--header,
+.blog__news--header,
+.contact__us--header{
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 0 0 1.5rem;
+}
+.blog__news--list{
+    list-style: none;
+}
+
+.blog__news--items:not(:last-child){
+    padding: 0 0 .5rem;
+}
+
+.blog__news--links{
+    text-decoration: none;
+}
+
+.blog__news--links:visited,
+.blog__news--links:active{
+    color: blue;
+}
+
+.contact__us--email{
+    padding:  0 0 1rem;
+}
