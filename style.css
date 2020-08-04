@@ -70,9 +70,9 @@ body{
         height: 80vh;
     }
     .header__background{
-        width: 30%;
-        right: 0.5rem;
-        top: 23rem;
+        width: 70%;
+        left: 15%;
+        top: 10rem;
     }
     
     .header__logo--box{
@@ -274,6 +274,11 @@ body{
         width: 90%;
         padding: 4rem 2rem;
     }
+    .sell__background{
+        width: 70%;
+        top: 1rem;
+        left: 10%;
+    }
 }
 
 /* section buy style */
@@ -382,7 +387,11 @@ body{
     .house__option--link{
         font-size: 1.8rem;
     }
-
+    .buy__background{
+        width: 70%;
+        top: 1rem;
+        left: 12%;
+    }
 }
 
 /* why us section design */
@@ -489,6 +498,11 @@ body{
     }
     .reason__option--link{
         font-size: 1.8rem;
+    }
+    .us__background{
+        width: 70%;
+        top: 1rem;
+        left: 15%;
     }
 
 }
@@ -697,6 +711,11 @@ body{
     }
     .blog__details--image{
         margin: 3.5rem 0;
+    }
+    .blog__background{
+        width: 70%;
+        bottom: 50rem;
+        left: 15%;
     }
     
 }
