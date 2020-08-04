@@ -214,7 +214,7 @@ body{
     text-decoration: none;
     width: 50%;
     margin: 0 auto;
-    background-color: green;
+    background-color: #00609C;
     border-radius: 5px;
     border: none;
     padding: 1.5rem 0;
@@ -222,7 +222,7 @@ body{
     font-weight: 500;
     font-size: 2rem;
     cursor: pointer;
-    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.5);
 }
 
 /* animation for button */
@@ -308,10 +308,15 @@ body{
     color: #ffffff;
     font-size: 1.4rem;
     font-weight: 600;
+    width: 50%;
     display: block;
+    transition: all .2s ease-in-out;
 }
-.house__option--link:hover{
-    font-size: 1.5rem;
+.house__option--link:hover,
+.house__option--link:active{
+    /* font-size: 1.5rem; */
+    padding-bottom: .05rem;
+    border-bottom: 1px solid #ffffff;
 }
 
 /* why us section design */
@@ -385,6 +390,13 @@ body{
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+.reason__option--link:hover,
+.reason__option--link:active{
+    padding-bottom: .05rem;
+    border-bottom: 1px solid #ffffff;
 }
 
 /* blog section css */
@@ -494,11 +506,19 @@ body{
 
 .blog__btn{
     text-decoration: none;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.65);
     font-size: 2.5rem;
     display: block;
+    width: 13%;
     text-align: center;
-    margin: 3.5rem 0 4rem;
+    margin: 3.5rem auto 4rem;
+    transition: all .2s ease-in-out;
+}
+.blog__btn:hover,
+.blog__btn:active{
+    padding-bottom: .05rem;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
 }
 
 .blog__details{
@@ -612,10 +632,15 @@ body{
 }
 
 .blog__news--links:visited,
-.blog__news--links:active,
-.sections__links:visited,
-.sections__links:active{
+.sections__links:visited{
     color: blue;
+}
+
+.blog__news--links:hover,
+.blog__news--links:active,
+.sections__links:hover,
+.sections__links:active{
+    color: black;
 }
 
 .contact__us--email{
