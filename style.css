@@ -28,7 +28,7 @@ body{
     color: gray;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     html{
         font-size: 50%;
     }
@@ -65,7 +65,7 @@ body{
 }
 
 /* mobile media query for header */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     .header{
         height: 80vh;
     }
@@ -135,7 +135,7 @@ body{
 }
 
 /* mobile media query for navbar */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
 
 }
 /* vertical nav styling */
@@ -182,7 +182,7 @@ body{
 }
 
 /* mobile media query for vertical navbar */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     .vertical__nav{
         display: none;
     }
@@ -266,7 +266,7 @@ body{
 }
 
 /* mobile media query for sell section */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     .section__sell{
         height: 80vh;
     }
@@ -365,7 +365,7 @@ body{
 }
 
 /* mobile media query for buy section */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     .section__buy{
         height: auto;
         padding: 0 0 3.5rem;
@@ -475,7 +475,7 @@ body{
 }
 
 /* mobile media query for why us section */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     .section__us--reasons{
         width: 80%;
         
@@ -677,7 +677,7 @@ body{
     display: block;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     .section__blog--1,
     .section__blog--2{
         flex-direction: column;
@@ -798,7 +798,7 @@ body{
 }
 
 /* mobile media query for footer */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 600px){
     .footer{
         flex-direction: column;
         align-items: center;
