@@ -926,3 +926,22 @@ hr{
     transform: scale(1);
     opacity: 1;
 }
+
+/* mobile media query for popup */
+@media screen and (max-width: 600px){
+   .popup__content{
+    width: 85%;
+   }
+   .popup__input{
+       width: 95%;
+   }
+   .popup__form{
+    padding: 5rem 2rem 3rem;
+   }
+   .popup__form--header{
+    font-size: 2.5rem;
+   }
+   .popup__form--paragraph{
+    font-size: 1.4rem;
+   }
+}
