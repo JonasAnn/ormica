@@ -191,7 +191,6 @@ body{
     margin-right: .5rem;
     text-transform: capitalize;
     transition: all .2s ease;
-    display: none;
     transform: scale(0);
 }
 
@@ -200,7 +199,6 @@ body{
     background-color: #ffffff;
 }
 .vertical__nav--triangle:hover ~ .vertical__nav--text{
-    display: inline-block;
     transform: scale(1);
 }
 
