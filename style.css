@@ -67,18 +67,16 @@ body{
 /* mobile media query for header */
 @media screen and (max-width: 900px){
     .header{
-        height: 70vh;
+        height: 80vh;
     }
     .header__background{
-        width: 40%;
-        right: 10rem;
-        top: 25rem;
+        width: 30%;
+        right: 0.5rem;
+        top: 23rem;
     }
     
     .header__logo--box{
-        margin: 20rem auto 0;
-        width: 80%;
-        z-index: 3;
+        width: 70%;
     }
     
 }
@@ -136,6 +134,10 @@ body{
     object-fit: cover;
 }
 
+/* mobile media query for navbar */
+@media screen and (max-width: 900px){
+
+}
 /* vertical nav styling */
 .vertical__nav{
     position: fixed;
@@ -177,6 +179,13 @@ body{
 }
 .vertical__nav--triangle:hover ~ .vertical__nav--text{
     opacity: 1;
+}
+
+/* mobile media query for vertical navbar */
+@media screen and (max-width: 900px){
+    .vertical__nav{
+        display: none;
+    }
 }
 
 /* section sell css */
@@ -254,6 +263,17 @@ body{
 .section__sell--btn:active{
     transform: translateY(0);
     box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+}
+
+/* mobile media query for sell section */
+@media screen and (max-width: 900px){
+    .section__sell{
+        height: 80vh;
+    }
+    .section__sell--cta{
+        width: 90%;
+        padding: 4rem 2rem;
+    }
 }
 
 /* section buy style */
@@ -339,6 +359,25 @@ body{
     border-bottom: 1px solid #ffffff;
 }
 
+/* mobile media query for buy section */
+@media screen and (max-width: 900px){
+    .section__buy{
+        height: auto;
+    }
+    .house{
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    }
+    .house__options{
+        width: 100%;
+    }
+    .house__options:not(:last-child){
+        margin: 0 0 2.5rem;
+    }
+
+}
+
 /* why us section design */
 .section__us{
     /* height: 100vh; */
@@ -419,6 +458,27 @@ body{
     border-bottom: 1px solid #ffffff;
 }
 
+/* mobile media query for why us section */
+@media screen and (max-width: 900px){
+    .section__us--reasons{
+        width: 80%;
+        
+    }
+    .us--reason--one,
+    .us--reason--two{
+        flex-direction: column;
+        align-items: center;
+    }
+    .reason__options{
+        width: 100%;
+    }
+    .reason__options:not(:last-child){
+        margin: 0 0 2.5rem;
+    }
+
+}
+
+
 /* blog section css */
 .section__blog{
     /* height: 100vh; */
@@ -472,11 +532,6 @@ body{
     position: relative;
     /* transition: all .2 ease-in-out; */
 }
-
-/* .blog__post:hover{
-    background-image: linear-gradient(to right, rgba(75, 43, 192, 0.603) 0%, rgba(75, 43, 192, 0.603) 15%, rgba(0, 0 , 0, 0.6) 15%),
-    url("./images/4121213.jpg");
-} */
 
 .blog__post--image{
     width: 100%;
