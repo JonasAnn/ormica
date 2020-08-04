@@ -72,7 +72,7 @@ body{
     .header__background{
         width: 70%;
         left: 15%;
-        top: 10rem;
+        top: 12rem;
     }
     
     .header__logo--box{
@@ -136,6 +136,9 @@ body{
 
 /* mobile media query for navbar */
 @media screen and (max-width: 600px){
+    .list__stick{
+        width: 50%;
+    }
 
 }
 /* vertical nav styling */
@@ -389,7 +392,7 @@ body{
     }
     .buy__background{
         width: 70%;
-        top: 1rem;
+        top: 1.8rem;
         left: 12%;
     }
 }
